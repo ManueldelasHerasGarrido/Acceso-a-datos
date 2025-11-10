@@ -9,12 +9,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @Slf4j
 public class AddApplication implements CommandLineRunner {
 
-	public static void main(String[] args) {
-		SpringApplication.run(AddApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(AddApplication.class, args);
+    }
 
     @Override
     public void run(String... args) throws Exception {
         log.info("hola");
+        System.out.println("Bievenido al explorador de ficheros. Introduzca la ruta del directorio que desea explorar:");
+        
     }
 }
